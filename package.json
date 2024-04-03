@@ -17,5 +17,8 @@
     "nodemon": "^3.1.0",
     "swagger-ui-express": "^5.0.0",
     "webpack": "^5.91.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }
