@@ -15,6 +15,7 @@
   "dependencies": {
     "express": "^4.19.2",
     "nodemon": "^3.1.0",
-    "swagger-ui-express": "^5.0.0"
+    "swagger-ui-express": "^5.0.0",
+    "webpack": "^5.91.0"
   }
 }
