@@ -8,7 +8,7 @@
   "host": "www.ddenzu.store",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
