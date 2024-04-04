@@ -1,4 +1,5 @@
 const express = require('express')
+const http = require('http');
 const app = express()
 const cors = require('cors');
 const swaggerUi = require('swagger-ui-express');
@@ -7,9 +8,9 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(cors({
-    origin: '*' 
+    origin: "http://www.ddenzu.store",
+    credentials: true,
 }));
-app.use('/api', createProxyMiddleware({ target: 'http://www.ddenzu.store', changeOrigin: true }));
 
 app.listen(8080, () => {
     console.log('http://localhost:8080 에서 서버 실행중')
