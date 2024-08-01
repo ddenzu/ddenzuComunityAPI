@@ -11,10 +11,10 @@
     "https"
   ],
   "paths": {
-    "/": {
+    "/*": {
       "get": {
-        "summary": "루트 경로 접속",
-        "description": "클라이언트가 서버에 접속할 때 루트 경로로 리다이렉트됩니다.",
+        "summary": "모든 경로 접속",
+        "description": "모든 경로로의 요청을 첫 페이지로 리다이렉트합니다.",
         "responses": {
           "302": {
             "description": "첫 페이지로 리다이렉트 성공"
